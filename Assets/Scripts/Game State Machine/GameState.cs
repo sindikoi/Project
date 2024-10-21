@@ -66,15 +66,12 @@ public class GameState : MonoBehaviour
     public virtual void StateEnter(StateSo previous)
     {
 
-      
         isCurrentState = true;           
         wasTranistionInto = true;
-
     }
 
     public virtual void StateExit(GameState next)
     {
-        Debug.Log($"State Exited: {stateName}, Next state: {next?.stateName}");
         isCurrentState = false;
         gameStateChannel.StateExited(this.stateSo);
         next.StateEnter(this.stateSo);

@@ -16,8 +16,6 @@ public class GameStateManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("GameStateManager started.");
-
         var beacon = FindObjectOfType<Beacon>();
         gameStateChannel = beacon.gameStateChannel;
        
@@ -46,7 +44,6 @@ public class GameStateManager : MonoBehaviour
 
             state = states.FirstOrDefault(x => x.isCurrentState);
         }
-        Debug.Log($"Re-entering state: {state.stateName} after scene load.");
         gameStateChannel.StateEntered(state.stateSo);
     }
 

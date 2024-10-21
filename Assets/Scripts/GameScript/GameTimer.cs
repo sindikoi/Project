@@ -8,6 +8,9 @@ public class GameTimer : MonoBehaviour
     public float timeLimit = 30f; 
     private float timer;
     private string finalScene = "ExitScene";
+    public StateSo exitStateSo;
+    public GameStateChannel gameStateChannel;
+  
 
     void Start()
     {
@@ -26,6 +29,17 @@ public class GameTimer : MonoBehaviour
 
     public void GameOver()
     {
+        if (gameStateChannel != null && exitStateSo != null)
+        {
+            gameStateChannel.StateEntered(exitStateSo);
+
+            Debug.Log("Transitioning to ExitStateSo");
+        }
+        else
+        {
+            Debug.Log("GameStateChannel or ExitStateSo is not set!");
+        }
+
         SceneManager.LoadScene(finalScene);
 
         Application.Quit();

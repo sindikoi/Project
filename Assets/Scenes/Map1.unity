@@ -11707,6 +11707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLimit: 30
+  exitStateSo: {fileID: 11400000, guid: 49e71403edf856f4187eb116934bc34f, type: 2}
+  gameStateChannel: {fileID: 11400000, guid: cefc80fad08e292459cfd3fe276880b0, type: 2}
 --- !u!1 &2023544380
 GameObject:
   m_ObjectHideFlags: 0

@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4b6692257a18b4facd32d0dfe611af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateSo: {fileID: 11400000, guid: 5814a13c97b945d44b9c1afe10eecf86, type: 2}
+  stateSo: {fileID: 11400000, guid: 49e71403edf856f4187eb116934bc34f, type: 2}
   isCurrentState: 0
   nextState: {fileID: 0}
   previousState: {fileID: 0}

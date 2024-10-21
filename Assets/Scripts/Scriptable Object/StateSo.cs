@@ -8,4 +8,5 @@ public class StateSo : ScriptableObject
 {
     public bool canMove;
     public bool canMenu;
+    public bool canExit;
 }
